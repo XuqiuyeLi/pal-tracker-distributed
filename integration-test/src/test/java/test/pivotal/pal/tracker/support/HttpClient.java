@@ -13,7 +13,6 @@ public class HttpClient {
     private final OkHttpClient okHttp = new OkHttpClient();
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-
     public Response get(String url) {
         return fetch(new Request.Builder().url(url));
     }
